@@ -83,37 +83,54 @@
 [data-theme="tan"] .btn:hover   { background: rgba(255,255,255,.55); }
 [data-theme="tan"] .nav-item.active { background: rgba(58,138,66,.15); }
 
-/* ─── OBSIDIAN CORE ──────────────────────── */
+/* ─── OBSIDIAN CORE (CATPPUCCIN) ──────────────────────── */
 [data-theme="obsidian"] {
-  --bg:      #0a0a0c;
-  --bg2:     #0f0f14;
-  --bg3:     #141418;
-  --bg4:     #1c1c24;
-  --border:  #1e1e2e;
-  --border2: #2a2a3e;
-  --text:    #e8eaf0;
-  --muted:   #5a6a7a;
-  --dim:     #2c3040;
-  --green:   #00d4c8;
-  --green2:  #00b8ad;
-  --gdim:    rgba(0,212,200,0.1);
-  --yellow:  #f0b840;
-  --ydim:    rgba(240,184,64,0.1);
-  --orange:  #f0b840;
-  --odim:    rgba(240,184,64,0.1);
-  --blue:    #00ccdd;
-  --bdim:    rgba(0,204,221,0.1);
-  --purple:  #00d4c8;
-  --pdim:    rgba(0,212,200,0.1);
-  --teal:    #00e8d8;
-  --tdim:    rgba(0,232,216,0.1);
-  --red:     #f06060;
-  --rdim:    rgba(240,96,96,0.1);
-  --gray:    #2a3040;
-  --graydim: rgba(42,48,64,0.3);
+  --bg:      #1e1e2e;   /* base */
+  --bg2:     #181825;   /* mantle */
+  --bg3:     #11111b;   /* crust */
+  --bg4:     #313244;   /* surface0 */
+
+  --border:  #313244;
+  --border2: #45475a;
+
+  --text:    #cdd6f4;   /* text */
+  --muted:   #a6adc8;   /* subtext0 */
+  --dim:     #585b70;   /* surface2 */
+
+  --green:   #a6e3a1;
+  --green2:  #94e2d5;
+  --gdim:    rgba(166,227,161,0.12);
+
+  --yellow:  #f9e2af;
+  --ydim:    rgba(249,226,175,0.12);
+
+  --orange:  #fab387;
+  --odim:    rgba(250,179,135,0.12);
+
+  --blue:    #89b4fa;
+  --bdim:    rgba(137,180,250,0.12);
+
+  --purple:  #cba6f7;
+  --pdim:    rgba(203,166,247,0.12);
+
+  --teal:    #94e2d5;
+  --tdim:    rgba(148,226,213,0.12);
+
+  --red:     #f38ba8;
+  --rdim:    rgba(243,139,168,0.12);
+
+  --gray:    #45475a;
+  --graydim: rgba(69,71,90,0.35);
 }
-[data-theme="obsidian"] .tl-item.current-block .tl-card { border-color: var(--teal) !important; box-shadow: 0 0 16px rgba(0,232,216,0.15); }
-[data-theme="obsidian"] .tl-dot { box-shadow: 0 0 8px currentColor; }
+
+[data-theme="obsidian"] .tl-item.current-block .tl-card {
+  border-color: var(--teal) !important;
+  box-shadow: 0 0 16px rgba(148,226,213,0.18);
+}
+
+[data-theme="obsidian"] .tl-dot {
+  box-shadow: 0 0 8px currentColor;
+}
 
 /* ─── NEON CIRCUIT ───────────────────────── */
 [data-theme="neon"] {
